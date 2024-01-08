@@ -1,0 +1,38 @@
+CRITICAL - 2024-01-08 05:57:43 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-01-08 08:26:20 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-01-08 08:26:50 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-01-08 08:28:07 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-01-08 08:28:07 --> ErrorException: Uncaught Error: Class 'Locale' not found in /var/www/html/system/Helpers/number_helper.php:137
+Stack trace:
+#0 /var/www/html/system/Helpers/number_helper.php(56): format_number(6, 2, NULL, Array)
+#1 /var/www/html/system/Debug/BaseExceptionHandler.php(152): number_to_size(6, 2)
+#2 /var/www/html/app/Views/errors/html/error_exception.php(384): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /var/www/html/system/Debug/BaseExceptionHandler.php(248): include('/var/www/html/a...')
+#4 /var/www/html/system/Debug/BaseExceptionHandler.php(251): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /var/www/html/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\FrameworkException), 500, '/var/www/html/a...')
+#6 /var/www/html/system/Debug/Exceptions.php(157): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Re
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /var/www/html/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /var/www/html/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

@@ -1,0 +1,31 @@
+version: '3'
+services:
+  web:
+    platform: linux/arm64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8086:80"
+    depends_on:
+      - db
+    volumes:
+      - ./phpproject:/var/www/html
+    networks:
+      - php_project_network
+
+  db:
+    platform: linux/arm64
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: my_database
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user_password
+    ports:
+      - "33066:3306"
+    networks:
+      - php_project_network
+
+networks:
+  php_project_network:
